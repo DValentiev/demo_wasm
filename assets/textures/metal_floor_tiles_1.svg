@@ -1,0 +1,25 @@
+<svg width="1000" height="1000" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="tilePattern1" patternUnits="userSpaceOnUse" width="100" height="100">
+      <rect x="0" y="0" width="100" height="100" fill="#222"/>
+      <path d="M10 10 L90 90" stroke="#000000" stroke-width="2"/>
+      <path d="M90 10 L10 90" stroke="#aaa" stroke-width="2"/>
+      <circle cx="50" cy="50" r="30" fill="none" stroke="#bbafaf" stroke-width="2"/>
+    </pattern>
+    <pattern id="tilePattern2" patternUnits="userSpaceOnUse" width="100" height="100">
+      <rect x="0" y="0" width="100" height="100" fill="#222"/>
+      <path d="M10 10 L90 90" stroke="#726969" stroke-width="2"/>
+      <path d="M90 10 L10 90" stroke="#5f5858" stroke-width="2"/>
+    </pattern>
+  </defs>
+
+  <rect x="0" y="0" width="500" height="500" fill="url(#tilePattern1)"/>
+  <rect x="500" y="0" width="500" height="500" fill="url(#tilePattern2)"/>
+  <rect x="0" y="500" width="500" height="500" fill="url(#tilePattern2)"/>
+  <rect x="500" y="500" width="500" height="500" fill="url(#tilePattern1)"/>
+
+  <g transform="translate(50, 50)">
+    <rect x="0" y="0" width="900" height="900" fill="none" stroke="#333" stroke-width="4"/>
+  </g>
+
+</svg>
